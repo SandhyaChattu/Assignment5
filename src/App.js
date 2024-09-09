@@ -1,4 +1,4 @@
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch,BrowserRouter} from 'react-router-dom'
 
 import './App.css'
 import Login from './components/Login'
@@ -44,10 +44,12 @@ const salaryRangesList = [
 
 // Replace your code here
 const App = () => (
+  <BrowserRouter>
   <Switch>
     <Route exact path="/login" component={Login} />
     <Route exact path="/" componetn={Home} />
   </Switch>
+<BrowserRouter>
 )
 
 export default App
